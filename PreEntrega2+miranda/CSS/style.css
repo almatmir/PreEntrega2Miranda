@@ -1,3 +1,8 @@
+*{margin: 0;
+padding: 0;}
+
+
+/* ************** */
 nav {
     border: 1px solid black;
     display: flex;
@@ -9,8 +14,8 @@ nav {
 .grid-titulo {
     display: grid;
     grid-row: 1/3;
-    grid-template-areas: 
-    "img-gato titulo-gato titulo-gato";
+    grid-template-areas:
+        "img-gato titulo-gato titulo-gato";
     background-color: bisque;
 }
 
@@ -31,17 +36,63 @@ nav {
 }
 
 
-/* modificamos el main */
+/* modificamos el main del index*/
 
-.main-container{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+.mainContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "tituloMainIndex tituloMainIndex"
+        "parrafoIndex containerImg";
 }
 
 main {
     width: 100%;
-    height: 600px;
 }
+
+.tituloMainIndex {
+    grid-area: tituloMainIndex;
+    background-color: gray;
+    height: 20%;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.tituloMainIndex h2 {
+    font-size: 40px;
+    display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerImg {
+    grid-area: containerImg;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+}
+
+.containerImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerText p {
+    grid-area: textoIndex;
+
+}
+
+.parrafoIndex {
+    grid-area: parrafoIndex;
+    background-color: coral;
+}
+
+
+
 
 
 /* footer */
@@ -53,7 +104,7 @@ main {
     justify-content: center;
     height: auto;
     background-color: bisque;
-    
+
 }
 
 .footer-container ul {
@@ -69,7 +120,7 @@ main {
 .feed {
     color: black;
     text-decoration: none;
-    
+
 }
 
 
@@ -92,8 +143,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "containerTexto containerTexto"
-    "containerFormula imgContacto";
+        "containerTexto containerTexto"
+        "containerFormula imgContacto";
 }
 
 .containerFormula {
