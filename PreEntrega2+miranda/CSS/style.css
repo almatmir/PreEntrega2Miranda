@@ -65,8 +65,7 @@ main {
 .tituloMainIndex h2 {
     font-size: 40px;
     display: flex;
-  justify-content: center;
-  text-align: center;
+  
 }
 
 .containerImg {
@@ -125,16 +124,6 @@ main {
 
 
 
-/* adopciones main */
-
-/* .imgGatito {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-
 
 
 /* grid contacto main */
@@ -160,4 +149,25 @@ main {
 .containerTexto {
     grid-area: containerTexto;
     display: grid;
+}
+
+
+/* ADOPCIONES */
+
+.mainAdopciones {
+    display: grid;
+    background-color: coral;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "textAdopciones"
+    "carrouselAdopciones";
+
+}
+
+.textAdopciones {
+    grid-area: textAdopciones;
+}
+
+.carrouselAdopciones {
+    grid-area: carrouselAdociones;
 }
