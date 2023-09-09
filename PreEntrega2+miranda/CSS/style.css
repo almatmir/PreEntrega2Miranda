@@ -1,5 +1,7 @@
-*{margin: 0;
-padding: 0;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
 /* ************** */
@@ -65,7 +67,7 @@ main {
 .tituloMainIndex h2 {
     font-size: 40px;
     display: flex;
-  
+
 }
 
 .containerImg {
@@ -88,6 +90,7 @@ main {
 .parrafoIndex {
     grid-area: parrafoIndex;
     background-color: coral;
+    display: flex;
 }
 
 
@@ -122,56 +125,72 @@ main {
 
 }
 
-
-
-
-
-/* grid contacto main */
-
-.grid-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "containerTexto containerTexto"
-        "containerFormula imgContacto";
-}
-
-.containerFormula {
-    grid-area: containerFormula;
-    display: grid;
-}
-
-.imgContacto {
-    grid-area: imgContacto;
-    display: grid;
-}
-
-.containerTexto {
-    grid-area: containerTexto;
-    display: grid;
-}
-
-
 /* ADOPCIONES */
 
 .mainAdopciones {
     background-color: coral;
-  }
+}
 
 
-  /* DONACIONES */
+/* DONACIONES */
 
-  .containerDonaciones {
+.containerDonaciones {
     background-color: coral;
-  }
+}
 
-  .donacionesParrafo {
+.donacionesParrafo {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .donacionesParrafo p {
+}
+
+.donacionesParrafo p {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
+/* DONDE ESTAMOS */
+
+
+.mainDE {
+    background-color: coral;
+}
+
+
+/* tamaño mapa */
+
+.containerMap {
+    max-width: 50px;
+}
+
+.imgMap {
+    max-width: 1500px;
+    max-height: 500px;
+}
+
+
+/* CONTACTO */
+.mainContacto {
+    background-color: coral;
+}
+
+.containerFormImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "containerFormulario imgContacto"
+        "containerFormulario imgContacto";
+}
+
+
+
+.containerFormulario {
+    grid-area: containerFormulario;
+}
+
+
+
+.imgContacto {
+    grid-area: imgContacto;
+}

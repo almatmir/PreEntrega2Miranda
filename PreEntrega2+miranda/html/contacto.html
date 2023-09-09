@@ -20,44 +20,40 @@
             <img class="img-gato" src="../img/gatito 1.jfif" alt="gatito">
             <h1 class="titulo-gato">Adopta Tu Gatito</h1>
         </div>
-        
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container ">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active px-4">
-                                <a class="nav-link" href="../index.html"> Inicio </a>
-                            </li>
-                            <li class="nav-item px-4">
-                                <a class="nav-link" href="../html/adopciones.html"> adopciones </a>
-                            </li>
-                            <li class="nav-item px-4">
-                                <a class="nav-link" href="../html/contacto.html"> Contacto </a>
-                            </li>
-                            <li class="nav-item px-4">
-                                <a class="nav-link" href="../html/donaciones.html"> Donaciones </a>
-                            </li>
-                            <li class="nav-item px-4">
-                                <a class="nav-link" href="../html/dondeestamos.html"> Donde Estamos </a>
-                            </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> INICIO </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
 
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="../html/adopciones.html">ADOPCIONES</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="../html/contacto.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="../html/donaciones.html">DONACIONES</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="../html/dondeestamos.html">DONDE ESTAMOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
-    <main class="grid-contacto">
-        <div >
+    <main class="text-center mainContacto">
+        <div>
             <div class="containerTexto">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos libero, soluta voluptas
                     eligendi culpa sapiente qui nihil autem placeat sunt debitis id, necessitatibus sed facilis! amet
@@ -72,45 +68,34 @@
                     distinctio laboriosam id.</p>
             </div>
         </div>
-        <div>
-            <div >
+        <div class="containerFormImg">
 
-                <div class="containerFormula">
-                    <form action="contacto.html" method="post">
-                        <ul>
-                            <li>
-                                <label for="name">Nombre y Apellido:</label>
-                                <input class="nombreApellido" placeholder="Roberto Rigoberto" type="text" id="name"
-                                    name="user_name" />
-                            </li>
-                            <li>
-                                <label for="mail">Email:</label>
-                                <input class="nombreApellido" placeholder="pizzaconanana@agridulce.com" type="email"
-                                    id="mail" name="user_email" />
-                            </li>
-                            <li>
-                                <label for="mail">Telefono:</label>
-                                <input class="nombreApellido" placeholder="12345614" type="number" id="number"
-                                    name="user_number" />
-                            </li>
-                            <li>
-                                <label for="msg">Comentanos:</label>
-                                <textarea id="msg" name="user_message"></textarea>
-                            </li>
 
-                        </ul>
-                    </form>
-                    <button class="boton" type="button">
-                        enviar 
-                    </button>
+            <div class="containerFormulario">
 
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                    </div>
+
+                </form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"> Comentanos tus dudas </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-
-
-                <div class="imgContacto">
-                    <img src="../img/contactanos.jfif" alt="">
-                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
+
+
+            <div class="imgContacto mx-auto">
+                <img src="../img/contactanos.jfif" alt="gatito de contacto papurri">
+            </div>
+
 
         </div>
     </main>
@@ -136,8 +121,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
