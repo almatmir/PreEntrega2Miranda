@@ -155,20 +155,23 @@ main {
 /* ADOPCIONES */
 
 .mainAdopciones {
-    /* display: grid; */
     background-color: coral;
-    /* grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "textAdopciones"
-    "carrouselAdopciones"; */
+  }
 
-}
 
-.textAdopciones {
-    grid-area: textAdopciones;
-}
+  /* DONACIONES */
 
-.carrouselAdopciones {
-    grid-area: carrouselAdociones;
-}
+  .containerDonaciones {
+    background-color: coral;
+  }
+
+  .donacionesParrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donacionesParrafo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
