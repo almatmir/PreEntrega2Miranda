@@ -155,12 +155,13 @@ main {
 /* ADOPCIONES */
 
 .mainAdopciones {
-    display: grid;
+    /* display: grid; */
     background-color: coral;
-    grid-template-rows: 50% 50%;
+    /* grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "textAdopciones"
-    "carrouselAdopciones";
+    "carrouselAdopciones"; */
 
 }
 
