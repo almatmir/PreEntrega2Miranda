@@ -47,19 +47,20 @@ nav {
     grid-template-areas:
         "tituloMainIndex tituloMainIndex"
         "parrafoIndex containerImg";
+    /* justify-content: center;
+    align-items: center; */
 }
 
-main {
+/* main {
     width: 100%;
-}
+} */
 
 .tituloMainIndex {
     grid-area: tituloMainIndex;
     background-color: gray;
-    height: 20%;
     text-transform: uppercase;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     height: 100%;
 }
